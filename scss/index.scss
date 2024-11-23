@@ -1,0 +1,20 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+body {
+  width: 25rem;
+  height: 15rem;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: $font-family, sans-serif;
+}
+
+.header-block {
+  width: 100%;
+  height: auto;
+  color: $white;
+  background: $primary-color;
+  padding: 0.5rem;
+  font-size: 1rem;
+}

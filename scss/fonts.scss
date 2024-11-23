@@ -1,0 +1,8 @@
+$boldness: 300, 400, 500, 600, 700, 800;
+$font-family: "Parkinsans";
+
+@each $bold in $boldness {
+  .fw-#{$bold} {
+    font-weight: $bold;
+  }
+}

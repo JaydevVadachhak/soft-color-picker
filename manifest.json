@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Soft Color Picker",
+  "description": "Picking up a colors from browser active tabs!!",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "assets/color-picker_9728327.png"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "soft-color-picker",
+  "version": "1.0.0",
+  "description": "A Chrome Extension For Picking up a colors from broweser active tabs!!",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss/index.scss -o css",
+    "build-scss": "node-sass scss/index.scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydevVadachhak/soft-color-picker.git"
+  },
+  "keywords": [
+    "chrome-extension",
+    "color-picker",
+    "typescript",
+    "soft-color-picker"
+  ],
+  "author": "JaydevVadachhak",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/JaydevVadachhak/soft-color-picker/issues"
+  },
+  "homepage": "https://github.com/JaydevVadachhak/soft-color-picker#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.283",
+    "node-sass": "^9.0.0",
+    "sass": "^1.81.0",
+    "typescript": "^5.7.2"
+  }
+}
