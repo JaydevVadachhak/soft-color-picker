@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "scss": "node-sass --watch scss/index.scss -o css",
-    "build-scss": "node-sass scss/index.scss -o css"
+    "build-scss": "node-sass scss/index.scss -o css",
+    "build": "npx tsc",
+    "watch": "npx tsc --watch"
   },
   "repository": {
     "type": "git",
