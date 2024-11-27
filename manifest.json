@@ -5,6 +5,39 @@
   "version": "1.0",
   "action": {
     "default_popup": "index.html",
-    "default_icon": "assets/color-picker_9728327.png"
+    "default_title": "Soft Color Picker",
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "24": "assets/icon-24.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icon-16.png",
+    "24": "assets/icon-24.png",
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "js": ["dist/content.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "js": ["dist/cleanContent.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "author": {
+    "email": "JaydevVadachhak@gmail.com"
   }
 }
