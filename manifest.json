@@ -3,6 +3,7 @@
   "name": "Soft Color Picker",
   "description": "Picking up a colors from browser active tabs!!",
   "version": "1.0",
+  "minimum_chrome_version": "102",
   "action": {
     "default_popup": "index.html",
     "default_title": "Soft Color Picker",
@@ -21,18 +22,8 @@
     "48": "assets/icon-48.png",
     "128": "assets/icon-128.png"
   },
-  "permissions": ["activeTab", "scripting", "tabs"],
+  "permissions": ["activeTab", "scripting", "tabs", "storage"],
   "host_permissions": ["<all_urls>"],
-  "content_scripts": [
-    {
-      "js": ["dist/content.js"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "js": ["dist/cleanContent.js"],
-      "matches": ["<all_urls>"]
-    }
-  ],
   "background": {
     "service_worker": "dist/background.js",
     "type": "module"

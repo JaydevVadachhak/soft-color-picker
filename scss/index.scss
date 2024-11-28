@@ -11,13 +11,21 @@ body {
   font-family: $font-family, sans-serif;
 }
 
-.header-block {
+.header {
   width: 100%;
   height: auto;
   color: $white;
   background: $primary-color;
   padding: 0.5rem;
   font-size: 1rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &--logo {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 section {

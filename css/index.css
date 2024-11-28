@@ -43,13 +43,19 @@ body {
   box-sizing: border-box;
   font-family: "Parkinsans", sans-serif; }
 
-.header-block {
+.header {
   width: 100%;
   height: auto;
   color: #ffffff;
   background: #001a66;
   padding: 0.5rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  display: flex;
+  gap: 8px;
+  align-items: center; }
+  .header--logo {
+    width: 24px;
+    height: 24px; }
 
 section {
   padding: 1rem; }
@@ -92,8 +98,10 @@ section {
   section .button:active {
     background: #09223b;
     color: rgba(255, 255, 255, 0.7); }
+  section .button.disabled,
   section .button:disabled {
     cursor: not-allowed;
+    pointer-events: none;
     background: rgba(0, 0, 0, 0.08);
     color: rgba(0, 0, 0, 0.3); }
   section button {
