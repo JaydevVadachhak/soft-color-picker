@@ -1,9 +1,10 @@
 @import "./variables.scss";
 @import "./fonts.scss";
+@import "./buttons.scss";
 
 body {
   width: 25rem;
-  height: 15rem;
+  height: auto;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -17,4 +18,23 @@ body {
   background: $primary-color;
   padding: 0.5rem;
   font-size: 1rem;
+}
+
+section {
+  padding: 1rem;
+
+  .container {
+    width: 100%;
+
+    .heading {
+      font-size: 0.8rem;
+      color: $primary-color;
+    }
+  }
+
+  @include button;
+
+  button {
+    width: 100%;
+  }
 }

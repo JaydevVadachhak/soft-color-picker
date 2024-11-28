@@ -12,3 +12,29 @@ chrome.runtime.onConnect.addListener((port) => {
     });
   }
 });
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  switch (message.type) {
+    case "START_PICKER":
+      sendResponse({
+        message: "Success Start!!",
+        error: null,
+      });
+      break;
+    case "STOP_PICKER":
+      sendResponse({
+        message: "Success Stop!!",
+        error: null,
+      });
+      break;
+    case "COLOR_SELECTED":
+      sendResponse({
+        message: "Success Pick!!",
+        error: null,
+      });
+      break;
+    default:
+      sendResponse({ status: "Unknown message type." });
+      break;
+  }
+});

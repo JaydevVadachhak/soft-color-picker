@@ -4,10 +4,12 @@
   "description": "A Chrome Extension For Picking up a colors from broweser active tabs!!",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch scss/index.scss -o css",
+    "watch-scss": "node-sass --watch scss/index.scss -o css",
+    "watch-ts": "npx tsc --watch",
     "build-scss": "node-sass scss/index.scss -o css",
-    "build": "npx tsc",
-    "watch": "npx tsc --watch"
+    "build-ts": "npx tsc",
+    "build": "npx tsc && node-sass scss/index.scss -o css",
+    "watch": "npx tsc --watch && node-sass --watch scss/index.scss -o css"
   },
   "repository": {
     "type": "git",
