@@ -5,7 +5,7 @@
   "version": "1.0",
   "minimum_chrome_version": "102",
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "popup.html",
     "default_title": "Soft Color Picker",
     "default_icon": {
       "16": "assets/icon-16.png",
