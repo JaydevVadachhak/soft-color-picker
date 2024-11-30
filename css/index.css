@@ -57,13 +57,40 @@ body {
     width: 24px;
     height: 24px; }
 
+.warning-banner {
+  width: 100%;
+  font-size: 1rem;
+  color: #001a66;
+  background: #f7dc6f;
+  padding: 1rem;
+  display: none; }
+
 section {
   padding: 1rem; }
   section .container {
-    width: 100%; }
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1.2rem; }
     section .container .heading {
       font-size: 0.8rem;
       color: #001a66; }
+    section .container .colors-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem; }
+      section .container .colors-container .color-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px; }
+      section .container .colors-container .color-box {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 10px;
+        border: 1px solid #ddd;
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+        border-radius: 5px; }
   section .button {
     align-items: center;
     background-color: #4682b4;

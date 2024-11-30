@@ -13,14 +13,22 @@
   </head>
   <body>
     <header class="header fw-600">
-      <img src="./assets/icon-128.png" alt="soft-color-picker" class="header--logo">
+      <img
+        src="./assets/icon-128.png"
+        alt="soft-color-picker"
+        class="header--logo"
+      />
       <span>Soft Color Picker</span>
     </header>
+    <div class="warning-banner fw-600"></div>
     <section #main>
       <div class="container">
         <div class="fw-600 heading">Selected Colors</div>
+        <div class="help-text fw-600"></div>
+        <div class="colors-info"></div>
+        <div class="colors-container"></div>
       </div>
-      <button class="button button-primary action-button">Start</button>
+      <button class="button button-primary action-button">Pick Color</button>
     </section>
     <script src="dist/popup.js" type="module"></script>
   </body>
